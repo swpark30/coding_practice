@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			* {
+				margin:0;
+				padding:0;
+			}
+		
+			.box {
+				width:100px;
+				height: 100px;
+				line-height:100px;
+				font-family :"MYYeongnamnu",sans-serif;
+				background: rgba( 255, 255, 255, 0.25 );
+				box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+				backdrop-filter: blur( 4px );
+				-webkit-backdrop-filter: blur( 4px );
+				border-radius: 10px;
+				border: 1px solid rgba( 255, 255, 255, 0.18 );
+				text-align: center;
+			}
+			
+			.box1{
+				position: absolute;
+				top:40px;
+				left:87%;
+				font-size:2em;
+				animation: slide 4s;
+				z-index:-2;
+				
+			}
+			
+			.box2{
+				position: absolute;
+				top:110px;
+				left:90%;
+				font-size:2em;
+				animation:slide2 3s;
+				z-index:-1;
+			}
+			
+			#wrap {
+				margin:0 auto;
+				width:100%;
+				height: 100%;
+
+			}
+			
+			.menuBox {
+				position:fixed;
+				width:300px;
+				height: 100%;
+			}
+			
+			.menuBox #Title {
+				font-size: 3em;
+			}
+			
+			.menuBox .join {
+				display: inline-block;
+				position: relative;
+				top:-30px;
+				right:0px;
+				width: 40%;
+				height:25px;
+				line-height:25px;
+				box-shadow: 8px 5px 10px rgba( 31, 38, 135, 0.3 );
+				border-radius: 5px;
+				text-align: center;
+				font-family :"MYYeongnamnu",sans-serif;
+				cursor: pointer;
+			} 
+			
+			.menuBox .search {
+				position:relative;
+				line-height:25px;
+				top:-70px;
+			}
+			
+			.menuBox #search {
+				height: 25px;
+				border-radius: 5px;
+			}
+			
+			.menuBox #searchBtn {
+				width:60px;
+				height: 30px;
+				border:none;
+				box-shadow: 8px 5px 15px rgba( 31, 38, 135, 0.37 );
+				border-radius: 5px;
+				cursor:pointer;  
+				background: radial-gradient(circle, #1f1c2c, #928dab); 
+				color: white;
+				font-weight: bold;
+			}
+
+			.menuBox ul {
+				position:absolute;
+				list-style: none;
+				width :100%;
+				height: 70%;
+				bottom:0;
+			}
+			
+			@font-face {
+			    font-family: 'MYYeongnamnu';
+			    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+			    font-weight: normal;
+			    font-style: normal;
+			}
+			
+			.menuBox ul li {
+				text-align: center;
+				font-size: 2em;
+				font-family :"MYYeongnamnu",sans-serif;
+				height: 100px;
+				line-height: 100px;	
+				cursor: pointer;
+				border: none;
+				z-index: 1;
+				margin:10px;
+			}
+			
+			
+			.menuBox ul li:hover {
+				font-weight : bold;
+			}
+			
+			.menuBox ul li .box3{
+				width:100%;
+				position:relative;
+				top:-100px;
+				left:-280px;
+				height: 100px;
+				z-index: -1;
+				
+			}
+			
+			.menuBox ul li:hover .box3 {
+				animation: slide3 0.5s forwards;
+			}
+			
+		
+			@keyframes slide {
+				from{
+					left : -100px;
+				}
+				to{
+					left:87%;
+				}
+				
+			}
+			@keyframes slide2 {
+				from{
+					left : -100px;
+				}
+				to{
+					left:90%;
+				}
+				
+			}
+			
+			@keyframes slide3 {
+				from{
+					left : -280px;
+				}
+				to{
+					left:0px;
+				}
+				
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="box menuBox">
+				<div id="Title">
+					위더스
+				</div>
+				<div id="login" class="join">
+					로그인 
+				</div>
+				<div id="join" class="join">
+					회원가입
+				</div>
+				<div >
+					<input type="text" id="search" class="search" size="20" placeholder="검색">
+					<input type="button" id="searchBtn" class="search" value="검색">
+				</div>
+				<ul>
+					<li>공지사항<div class="box box3"></div></li>
+					<li>건의게시판<div class="box box3"></div></li>
+					<li>질문게시판<div class="box box3"></div></li>
+					<li>자유게시판<div class="box box3"></div></li>
+				</ul>
+			</div>
+			<div class="box box1">
+				WITH
+			</div>
+			<div class="box box2">
+				US
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	
+		</script>
+</html>
